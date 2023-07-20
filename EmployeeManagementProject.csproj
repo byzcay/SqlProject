@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8130101B-0C32-4DE4-ADF1-57B2BAC9EFE9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EmployeeManagementProject</RootNamespace>
+    <AssemblyName>EmployeeManagementProject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSetInquiry.cs">
+      <DependentUpon>DataSetInquiry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetInquiry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetInquiry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeManagementDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeManagementDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeManagementDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeManagementDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeManagementDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeManagementDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeManagementDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeManagementDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeManagementDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeManagementDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeManagementDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeManagementDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InformationScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformationScreen.Designer.cs">
+      <DependentUpon>InformationScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginScreenDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginScreenDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Login_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_Page.Designer.cs">
+      <DependentUpon>Login_Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gender.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Gender.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="InformationScreen.resx">
+      <DependentUpon>InformationScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Page.resx">
+      <DependentUpon>Login_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="DataSetInquiry.xsc">
+      <DependentUpon>DataSetInquiry.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetInquiry.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetInquiry.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetInquiry.xss">
+      <DependentUpon>DataSetInquiry.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementDataSet.xsc">
+      <DependentUpon>EmployeeManagementDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeManagementDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeeManagementDataSet.xss">
+      <DependentUpon>EmployeeManagementDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementDataSet1.xsc">
+      <DependentUpon>EmployeeManagementDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeManagementDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeeManagementDataSet1.xss">
+      <DependentUpon>EmployeeManagementDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementDataSet2.xsc">
+      <DependentUpon>EmployeeManagementDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeManagementDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeeManagementDataSet2.xss">
+      <DependentUpon>EmployeeManagementDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementDataSet3.xsc">
+      <DependentUpon>EmployeeManagementDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeManagementDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeeManagementDataSet3.xss">
+      <DependentUpon>EmployeeManagementDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementDataSet4.xsc">
+      <DependentUpon>EmployeeManagementDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeManagementDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeeManagementDataSet4.xss">
+      <DependentUpon>EmployeeManagementDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementDataSet5.xsc">
+      <DependentUpon>EmployeeManagementDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeManagementDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeManagementDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeeManagementDataSet5.xss">
+      <DependentUpon>EmployeeManagementDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Gender.xsc">
+      <DependentUpon>Gender.xsd</DependentUpon>
+    </None>
+    <None Include="Gender.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Gender.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Gender.xss">
+      <DependentUpon>Gender.xsd</DependentUpon>
+    </None>
+    <None Include="LoginScreenDataSet.xsc">
+      <DependentUpon>LoginScreenDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LoginScreenDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LoginScreenDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LoginScreenDataSet.xss">
+      <DependentUpon>LoginScreenDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\EmployeeManagementDataSet.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementDataSet.DepartmentDataTable.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementDataSet.DepartmentRow.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementDataSet.DepartmentRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementDataSet.DepartmentRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementDataSet.EmployeesDataTable.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementDataSet.EmployeesRow.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementDataSet.EmployeesRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementDataSet.EmployeesRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementDataSet.GenderDataTable.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementDataSet.GenderRow.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementDataSet.GenderRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementDataSet.GenderRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementDataSet.JobsDataTable.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementDataSet.JobsRow.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementDataSet.JobsRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementDataSet.JobsRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementDataSet.LocationDataTable.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementDataSet.LocationRow.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementDataSet.LocationRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementDataSet.LocationRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementDataSet.ManagerDataTable.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementDataSet.ManagerRow.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementDataSet.ManagerRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementDataSet.ManagerRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementDataSet.UsersDataTable.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementDataSet.UsersRow.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementDataSet.UsersRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementDataSet.UsersRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementProject.EmployeeManagementDataSetTableAdapters.DepartmentTableAdapter.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementProject.EmployeeManagementDataSetTableAdapters.EmployeesTableAdapter.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementProject.EmployeeManagementDataSetTableAdapters.GenderTableAdapter.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementProject.EmployeeManagementDataSetTableAdapters.JobsTableAdapter.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementProject.EmployeeManagementDataSetTableAdapters.LocationTableAdapter.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementProject.EmployeeManagementDataSetTableAdapters.ManagerTableAdapter.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementProject.EmployeeManagementDataSetTableAdapters.TableAdapterManager+UpdateOrderOption.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementProject.EmployeeManagementDataSetTableAdapters.TableAdapterManager.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementProject.EmployeeManagementDataSetTableAdapters.UsersTableAdapter.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementProject.LoginScreenDataSetTableAdapters.Login_infoTableAdapter.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementProject.LoginScreenDataSetTableAdapters.TableAdapterManager+UpdateOrderOption.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementProject.LoginScreenDataSetTableAdapters.TableAdapterManager.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementProject.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\EmployeeManagementProject.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\Form1.datasource" />
+    <None Include="Properties\DataSources\Form2.datasource" />
+    <None Include="Properties\DataSources\Form3.datasource" />
+    <None Include="Properties\DataSources\Gender.datasource" />
+    <None Include="Properties\DataSources\LoginScreenDataSet.datasource" />
+    <None Include="Properties\DataSources\LoginScreenDataSet.Login_infoDataTable.datasource" />
+    <None Include="Properties\DataSources\LoginScreenDataSet.Login_infoRow.datasource" />
+    <None Include="Properties\DataSources\LoginScreenDataSet.Login_infoRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\LoginScreenDataSet.Login_infoRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Login_Page.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
